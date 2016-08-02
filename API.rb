@@ -13,14 +13,14 @@ Returns all methods
 <h1>listUsers</h1>
 Lists all usernames<br>
 Example /listUsers
-<h1>login[username, password]</h1>
-Login using username and password, redirects to /help on fail<br>
-Example /login/[username]/[password]'
+<h1>login[username, pin]</h1>
+Login using username and pin, redirects to /help on fail<br>
+Example /login/[username]/[pin]'
 end
 
-get '/login/:username/:password' do
+get '/login/:username/:pin' do
   if params['username'].to_s.eql? 'donutsAreGr8'
-    if params['password'].to_s.eql? 'Mmj7FnbS'
+    if params['pin'].to_s.eql? '4093'
       '<title>Logged In</title>
 Welcome donutsAreGr8!<br>
 The flag is MCA-37212FBC'
