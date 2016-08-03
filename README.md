@@ -2,4 +2,4 @@ Brute-Forceable API uses an API based login where contestants can make an unlimi
 
 ## Solution ##
 
-The flag (MCA-37212FBC) is found when connecting to /login/donutsAreGr8/Mmj7FnbS
+The flag (MCA-37212FBC) is found when connecting to /login/donutsAreGr8/4093
