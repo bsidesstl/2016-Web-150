@@ -1,12 +1,13 @@
-# escape=`
+FROM ruby:2.1-onbuild
 
-FROM ubuntu:14.04
-RUN apt-get update && apt-get install -y build-essential
-RUN apt-get -y install ruby-full
-RUN gem install sinatra
-RUN gem install thin
+ONBUILD RUN bundle install
 
-COPY API.rb /home
-COPY bash.bashrc /etc
+COPY API.rb /usr/src/app
 
-RUN chmod 755 /home/API.rb
+RUN mkdir -p /usr/src/app
+
+WORKDIR /usr/src/app
+
+ENV RACK_ENV production
+
+CMD ["ruby", "API.rb"]
