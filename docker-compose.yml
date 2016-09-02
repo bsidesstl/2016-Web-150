@@ -3,7 +3,7 @@ services:
   web:
     build: .
     ports:
-     - "80:4567"
+     - "80:80"
     volumes:
      - .:/code
     restart: always
