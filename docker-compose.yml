@@ -6,3 +6,4 @@ services:
      - "80:4567"
     volumes:
      - .:/code
+    restart: always
