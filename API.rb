@@ -55,7 +55,7 @@ get '/login/:username/:pin' do
     if params['pin'].to_s.eql? '4093'
       '<title>Logged In</title>
 Welcome donutsAreGr8!<br>
-The flag is MCA-37212FBC'
+The flag is STL-DDAE3A64'
     else
       redirect '/home'
     end
@@ -63,7 +63,7 @@ The flag is MCA-37212FBC'
       if params['pin'].to_s.eql? '1957'
         '<title>Logged In</title>
 Welcome pizza4life!<br>
-The flag is MCA-37212FBC'
+The flag is STL-DDAE3A64'
       else
         redirect '/home'
       end
@@ -79,7 +79,7 @@ The flag is not here....any other user will tell you the flag though.'
     if params['pin'].to_s.eql? '6267'
       '<title>Logged In</title>
 Welcome johnSmith!<br>
-The flag is MCA-37212FBC'
+The flag is STL-DDAE3A64'
     else
       redirect '/home'
     end
