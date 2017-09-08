@@ -52,7 +52,7 @@ end
 
 get '/login/:username/:pin' do
   if params['username'].to_s.eql? 'donutsAreGr8'
-    if params['pin'].to_s.eql? '4093'
+    if params['pin'].to_s.eql? '1110'
       '<title>Logged In</title>
 Welcome donutsAreGr8!<br>
 The flag is STL-DDAE3A64'
@@ -60,7 +60,7 @@ The flag is STL-DDAE3A64'
       redirect '/home'
     end
     elsif params['username'].to_s.eql? 'pizza4life'
-      if params['pin'].to_s.eql? '1957'
+      if params['pin'].to_s.eql? '5830'
         '<title>Logged In</title>
 Welcome pizza4life!<br>
 The flag is STL-DDAE3A64'
@@ -76,7 +76,7 @@ The flag is not here....any other user will tell you the flag though.'
       redirect '/home'
     end
   elsif params['username'].to_s.eql? 'johnSmith'
-    if params['pin'].to_s.eql? '6267'
+    if params['pin'].to_s.eql? '6867'
       '<title>Logged In</title>
 Welcome johnSmith!<br>
 The flag is STL-DDAE3A64'
